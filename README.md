@@ -1,18 +1,40 @@
-# Obsidian Sample Plugin
+# Obsidian GitHub Copilot Plugin
 
-This is a sample plugin for Obsidian (https://obsidian.md).
+This plugin aims to bring GitHub Copilot functionality directly to Obsidian, with a particular focus on mobile compatibility.
 
-This project uses TypeScript to provide type checking and documentation.
-The repo depends on the latest plugin API (obsidian.d.ts) in TypeScript Definition format, which contains TSDoc comments describing what it does.
+## Project Goal
 
-This sample plugin demonstrates some of the basic functionality the plugin API can do.
-- Adds a ribbon icon, which shows a Notice when clicked.
-- Adds a command "Open Sample Modal" which opens a Modal.
-- Adds a plugin setting tab to the settings page.
-- Registers a global click event and output 'click' to the console.
-- Registers a global interval which logs 'setInterval' to the console.
+The goal is to integrate AI-powered code completion and assistance capabilities into Obsidian, making it available across all platforms including mobile devices where traditional solutions face limitations.
 
-## First time developing plugins?
+## Background & Motivation
+
+While there is an existing plugin [@Pierrad/obsidian-github-copilot](https://github.com/Pierrad/obsidian-github-copilot) that provides GitHub Copilot integration for Obsidian, it has some significant limitations:
+
+- **Mobile Incompatibility**: The plugin doesn't work on the Obsidian mobile app
+- **Node.js Dependency**: Requires a Node.js path to be configured, which is problematic for mobile environments
+- **Platform Restrictions**: These dependencies limit its usability across different devices and platforms
+
+## Planned Approach
+
+This project will explore two main approaches to overcome these limitations:
+
+1. **Direct Implementation**: Find ways to implement AI code assistance directly within the plugin without external Node.js dependencies
+2. **Alternative Solutions**: Explore alternative AI services or approaches that are more compatible with mobile environments and don't require complex runtime dependencies
+
+## Current Status
+
+This project is currently in the planning and development phase. The codebase started as a fork of the official Obsidian sample plugin and will be modified to implement the GitHub Copilot functionality.
+
+## Technical Requirements
+
+- **Cross-Platform Compatibility**: Must work on desktop (Windows, macOS, Linux) and mobile (iOS, Android)
+- **No External Dependencies**: Avoid requiring Node.js or other runtime dependencies that aren't available on mobile
+- **Performance**: Maintain good performance across all platforms
+- **API Integration**: Integrate with AI services in a way that's compatible with mobile constraints
+
+## Development Setup
+
+### First time developing plugins?
 
 Quick starting guide for new plugin devs:
 

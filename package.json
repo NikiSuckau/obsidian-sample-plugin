@@ -1,15 +1,15 @@
 {
-	"name": "obsidian-sample-plugin",
-	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"name": "obsidian-github-copilot",
+	"version": "0.1.0",
+	"description": "Brings GitHub Copilot AI assistance to Obsidian with mobile compatibility",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
 		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
 		"version": "node version-bump.mjs && git add manifest.json versions.json"
 	},
-	"keywords": [],
-	"author": "",
+	"keywords": ["obsidian", "github-copilot", "ai", "code-completion", "mobile"],
+	"author": "NikiSuckau",
 	"license": "MIT",
 	"devDependencies": {
 		"@types/node": "^16.11.6",
